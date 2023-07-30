@@ -19,7 +19,7 @@ function App() {
     document.querySelector(".layout").scrollTop=document.querySelector(".layout").scrollHeight
   },[posts])
   const fetchBotResponse=async()=>{
-    const{data}=await axios.post("http://localhost:4000",{
+    const{data}=await axios.post("https://chatgpt-openai-app.onrender.com",{
       input:input},
       {headers:{
         "Content-Type":"application/json",
